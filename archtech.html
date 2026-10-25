@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arch Tech | Produtos Digitais de Alto Impacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Variáveis de Design */
+        :root {
+            --bg-dark: #0A192F;
+            --bg-light: #112240;
+            --accent: #00E5FF;
+            --text-main: #F1F5F9;
+            --text-muted: #8892B0;
+            --success: #10B981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 5%;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--bg-dark);
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 16px;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Problema/Solução */
+        .section {
+            padding: 80px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--bg-light);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 229, 255, 0.1);
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+
+        .card p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* Produtos */
+        .product-card {
+            background-color: var(--bg-light);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+
+        .product-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-card .price {
+            font-size: 14px;
+            color: var(--success);
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 5%;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">ARCH<span>TECH</span></div>
+        <nav>
+            <a href="#solucoes">Soluções</a>
+            <a href="#diagnostico">Diagnóstico Express</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Transformamos a complexidade da sua operação em <span>produtos digitais de alto impacto.</span></h1>
+        <p>A Arch Tech une arquitetura de software, inteligência artificial e estratégia de produto para diagnosticar e resolver os problemas mais críticos do seu negócio.</p>
+        <a href="#diagnostico" class="btn-primary">Conheça o Diagnóstico Express</a>
+    </section>
+
+    <!-- Soluções -->
+    <section class="section" id="solucoes">
+        <h2 class="section-title">Nossas Soluções</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Diagnóstico com Dados</h3>
+                <p>Descobrimos onde está o gargalo da sua operação antes de gastar um centavo em desenvolvimento.</p>
+            </div>
+            <div class="card">
+                <h3>Arquitetura Segura</h3>
+                <p>Construímos produtos com governança, segurança de dados (LGPD) e escalabilidade para o futuro.</p>
+            </div>
+            <div class="card">
+                <h3>Execução com IA</h3>
+                <p>Usamos automação e agentes inteligentes para acelerar o time-to-market da sua empresa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produto: Diagnóstico Express -->
+    <section class="section" id="diagnostico" style="background-color: var(--bg-dark);">
+        <h2 class="section-title">Conheça o Diagnóstico Express</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <div class="product-card">
+                <h3>Diagnóstico Acelerado de Churn</h3>
+                <div class="price">Investimento: R$ 4.500</div>
+                <p>Descubra em 3 dias as 3 causas reais da sua perda de clientes. Com dados, não com achismo.</p>
+                <br>
+                <a href="https://thinkable-kitten-eec.notion.site/churn-scanner" target="_blank" class="btn-primary">Agendar 15 min grátis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <p>&copy; 2026 Arch Tech. Todos os direitos reservados.</p>
+        <p>Contato: [seu-email@archtech.com] | LinkedIn: [seu-linkedin]</p>
+    </footer>
+
+</body>
+</html>
